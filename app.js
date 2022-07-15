@@ -3,7 +3,7 @@ function changeColor(color, delay) {
         setTimeout(() => {
             document.body.style.background = color;
             resolve();
-        }, delay);
+        }, delay);   
     });
 }
 
