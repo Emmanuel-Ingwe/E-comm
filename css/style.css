@@ -58,6 +58,12 @@ p {
   color: #555;
 }
 
+.col-2 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  min-width: 300px;
+}
+
 .container {
   max-width: 1300px;
   margin: auto;
@@ -163,6 +169,15 @@ p {
   padding: 10px;
   min-width: 200px;
   margin-bottom: 50px;
+  -webkit-transition: -webkit-transform 0.8s ease;
+  transition: -webkit-transform 0.8s ease;
+  transition: transform 0.8s ease;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease;
+}
+
+.small-container .col-4:hover {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 .small-container .col-4 img {
@@ -176,6 +191,7 @@ p {
 .small-container .col-4 .rating img {
   width: 14px;
   height: 14px;
+  color: #ff523b;
 }
 
 h4 {

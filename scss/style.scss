@@ -44,6 +44,11 @@ p {
     color: #555;
 }
 
+.col-2 {
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
 .container {
     max-width: 1300px;
     margin: auto;
@@ -136,6 +141,11 @@ p {
         padding: 10px;
         min-width: 200px;
         margin-bottom: 50px;
+        transition: transform 0.8s ease;
+
+        &:hover {
+            transform: translateY(-6px);
+        }
 
         img {
             width: 100%;
@@ -150,6 +160,7 @@ p {
             img {
                 width: 14px;
                 height: 14px;
+                color: #ff523b;
             }
         }
     }
