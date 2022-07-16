@@ -173,6 +173,11 @@ p {
   font-size: 14px;
 }
 
+.small-container .col-4 .rating img {
+  width: 14px;
+  height: 14px;
+}
+
 h4 {
   color: #555;
   font-weight: normal;

@@ -144,6 +144,14 @@ p {
         p {
             font-size: 14px;
         }
+        .rating {
+            // display: flex;
+
+            img {
+                width: 14px;
+                height: 14px;
+            }
+        }
     }
 }
 
