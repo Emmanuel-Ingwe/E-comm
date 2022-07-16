@@ -13,21 +13,22 @@
 <body>
 
     <div class="header">
-    <div class="container">
+    <div class="container" id="home">
         <div class="navbar">
             <div class="logo">
                 <img src="images/logo.png" width="125px" alt="">
             </div>
             <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Products</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">Account</a></li>
+                <ul class="menu-items">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#account">Account</a></li>
                 </ul>
             </nav>
             <img src="images/cart.png" width="30px" height="30px" alt="">
+            <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
         </div>
         <div class="row">
             <div class="col-2">
@@ -61,7 +62,7 @@
     </div>
 
     <!-- PRODUCTS -->
-    <div class="small-container">
+    <div class="small-container" id="products">
         <h2 class="title" >Featured Products</h2>
         <div class="row">
             <div class="col-4">
@@ -233,7 +234,7 @@
 
     <!-- Testim onials-->
 
-    <div class="testimonial">
+    <div class="testimonial" id="about">
         <div class="small-container">
             <div class="row">
                 <div class="col-3">
@@ -304,5 +305,46 @@
         </div>
     </div>
 
+    <!-- FOOTER -->
+    <div class="footer" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download app for Android and Ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png" alt="">
+                        <img src="images/app-store.png" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo-white.png" alt="">
+                    <p>Our purpose is Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae, nostrum?</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2022 - Ingwe works!</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>

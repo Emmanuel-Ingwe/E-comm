@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -270,5 +271,117 @@ h4 {
                 filter: grayscale(0);
             }
         }
+    }
+}
+
+// FOOTER
+.footer {
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+
+    p {
+        color: #8a8a8a;
+    }
+    h3 {
+        color: #fff;
+        margin: 0 0 20px 0;
+    }
+    .footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4 {
+        min-width: 250px;
+        margin-bottom: 20px;
+    }
+    .footer-col-1 {
+        flex-basis: 30%;
+
+        .app-logo {
+            margin-top: 20px;
+
+            img {
+                width: 140px;
+                cursor: progress;
+                transition: 0.3s;
+
+                &:hover {
+                    transform: translate(5px);
+                }
+            }
+        }
+    }
+    .footer-col-2 {
+        flex: 1;
+        text-align: center;
+
+        img {
+            width: 180px;
+            margin-bottom: 20px;
+        }
+    }
+    .footer-col-3, .footer-col-4 {
+        flex-basis: 12%;
+        text-align: center;
+    }
+    ul {
+        list-style: none;
+        cursor: alias;
+    }
+    hr {
+        border: none;
+        background: #b5b5b5;
+        height: 1px;
+        margin: 20px 0;
+    }
+    .copyright {
+        text-align: center;
+    }
+}
+
+.menu-icon {
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+// MEDIA QUERY MENU
+
+@media only screen and (max-width: 800px){
+    nav {
+        ul {
+            position: absolute;
+            top: 70px;
+            left: 0;
+            background: #333;
+            text-align: center;
+            width: 100%;
+            overflow: hidden;
+            transition: max-height 1s;
+
+            li {
+                width: 100%;
+                display: block;
+                margin-right: 50px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+        }
+        a {
+            color: #fff;
+        }
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+// Media FOr 600 SCREEN SIZE
+@media only screen and (max-width: 600px){
+    .row {
+        text-align: center;
+    }
+
+    .col-2, .col-3, .col-4 {
+        flex-basis: 100%;
     }
 }
