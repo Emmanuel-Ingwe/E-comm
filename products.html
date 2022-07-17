@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ing || Ecom.</title>
+    <title>All Products || Ecom.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -12,7 +12,6 @@
 </head>
 <body>
 
-    <div class="header">
     <div class="container" id="home">
         <div class="navbar">
             <div class="logo">
@@ -20,8 +19,8 @@
             </div>
             <nav>
                 <ul class="menu-items">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="products.html">Products</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="#account">Account</a></li>
@@ -30,40 +29,22 @@
             <img src="images/cart.png" width="30px" height="30px" alt="">
             <img src="images/menu.png" alt="" class="menu-icon" onclick="menutoggle()">
         </div>
-        <div class="row">
-            <div class="col-2">
-                <h1>Give Your Workout<br>A New Style!</h1>
-                <p>Success isn't always about Lorem ipsum dolor sit amet consectetur adipisicing. <br> Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                <a href="" class="btn">Explore Now &#8594;</a>
-            </div>
-            <div class="col-2">
-                <img src="images/exclusive.png" alt="">
-            </div>
-        </div>
-    </div>
-    </div>
-
-    <!-- FEATURED CATEGORIES -->
-
-    <div class="categories">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                    <img src="images/category-1.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-2.jpg" alt="">
-                </div>
-                <div class="col-3">
-                    <img src="images/category-3.jpg" alt="">
-                </div>
-            </div>
-        </div>
     </div>
 
     <!-- PRODUCTS -->
     <div class="small-container" id="products">
-        <h2 class="title" >Featured Products</h2>
+
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select name="" id="">
+                <option value="">Default Sorting</option>
+                <option value="">Sort by price</option>
+                <option value="">Sort by popularity</option>
+                <option value="">Sort by rating</option>
+                <option value="">Sort by sale</option>
+            </select>
+        </div>
+
         <div class="row">
             <div class="col-4">
                 <img src="images/product-1.jpg" alt="">
@@ -114,7 +95,56 @@
                 <p>$40.90</p>
             </div>
         </div>
-        <h2 class="title">Latest Products</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-1.jpg" alt="">
+                <h4>Red Printed T-Shirt</h4>
+                <div class="rating">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star.png" alt="">
+                </div>
+                <p>$50.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg" alt="">
+                <h4>Designer Trousers</h4>
+                <div class="rating">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star-o.png" alt="">
+                </div>
+                <p>$72.99</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="">
+                <h4>Trainers</h4>
+                <div class="rating">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star-half.png" alt="">
+                </div>
+                <p>$80.00</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="">
+                <h4>Blue T-Shirt</h4>
+                <div class="rating">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star.png" alt="">
+                    <img src="images/star-half.png" alt="">
+                    <img src="images/star-o.png" alt="">
+                </div>
+                <p>$40.90</p>
+            </div>
+        </div>
         <div class="row">
             <div class="col-4">
                 <img src="images/product-5.jpg" alt="">
@@ -213,98 +243,15 @@
                 <p>$30.90</p>
             </div>
         </div>
-    </div>
 
-    <!-- OFFER -->
-    <div class="offer">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/image1.png" alt="" class="offer-img">
-                </div>
-                <div class="col-2">
-                    <p>Exclusive Offers.</p>
-                    <h1>Smart Band 4</h1>
-                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur non inventore similique! Reprehenderit nulla placeat nihil modi labore! Nisi nesciunt voluptatem quo sit, asperiores quisquam corporis enim voluptas!</small><br>
-                    <a href="" class="btn">Sign For Now! &#8594;</a>
-                </div>
-            </div>
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
         </div>
-    </div>
-
-    <!-- Testim onials-->
-
-    <div class="testimonial" id="about">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-3">
-                        <h1>&OpenCurlyDoubleQuote;</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloremque porro neque sequi deleniti consequatur! Atque adipisci numquam dolores itaque quas quasi fuga quidem nostrum cumque!</p>
-                    <div class="rating">
-                        <img src="images/star.png" alt="">
-                        <img src="images/star.png" alt="">
-                        <img src="images/star.png" alt="">
-                        <img src="images/star-o.png" alt="">
-                        <img src="images/star-o.png" alt="">
-                    </div>
-                    <img src="images/user-1.png" alt="" width="200px">
-                    <h3>BunnyFu</h3>
-                </div>
-                <div class="col-3">
-                    <h1>&OpenCurlyDoubleQuote;</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloremque porro neque sequi deleniti
-                        consequatur! Atque adipisci numquam dolores itaque quas quasi fuga quidem nostrum cumque!</p>
-                    <div class="rating">
-                        <img src="images/star.png" alt="">
-                        <img src="images/star.png" alt="">
-                        <img src="images/star.png" alt="">
-                        <img src="images/star.png" alt="">
-                        <img src="images/star.png" alt="">
-                    </div>
-                    <img src="images/user-2.png" alt="">
-                    <h3>Sean Parker</h3>
-                </div>
-                <div class="col-3">
-                    <h1>&OpenCurlyDoubleQuote;</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi doloremque porro neque sequi deleniti
-                        consequatur! Atque adipisci numquam dolores itaque quas quasi fuga quidem nostrum cumque!</p>
-                    <div class="rating">
-                        <img src="images/star.png" alt="">
-                        <img src="images/star.png" alt="">
-                        <img src="images/star.png" alt="">
-                        <img src="images/star.png" alt="">
-                        <img src="images/star.png" alt="">
-                    </div>
-                    <img src="images/user-3.png" alt="">
-                    <h3>Mary Jane</h3>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Brands -->
-    <div class="brands">
-        <div class="small-container">
-            <div class="row">
-                <div class="col-5">
-                    <img src="images/logo-godrej.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-oppo.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-coca-cola.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-paypal.png" alt="">
-                </div>
-                <div class="col-5">
-                    <img src="images/logo-philips.png" alt="">
-                </div>
-            </div> 
-        </div>
-    </div>
-
+        
     <!-- FOOTER -->
     <div class="footer" id="contact">
         <div class="container">
